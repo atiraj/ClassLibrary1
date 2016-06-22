@@ -53,6 +53,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Microsoft.VisualStudio.Coverage.Analysis.dll" />
+    <Content Include="Microsoft.VisualStudio.Coverage.Interop - Copy.dll" />
+    <Content Include="Microsoft.VisualStudio.Coverage.Interop.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
