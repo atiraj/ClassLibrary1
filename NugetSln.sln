@@ -11,7 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorClient", "Calcula
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NugetTestMS", "NugetTestMS\NugetTestMS.csproj", "{F37BFE1A-76A7-4C91-AC47-CB4DADB0C9B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoverageConverter", "CoverageConverter\CoverageConverter.csproj", "{911E116F-A8D1-4A46-AF90-421523C94C24}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{1B86DE66-DB2A-40F5-A966-6A3C1387F2F0}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +34,6 @@ Global
 		{F37BFE1A-76A7-4C91-AC47-CB4DADB0C9B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F37BFE1A-76A7-4C91-AC47-CB4DADB0C9B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F37BFE1A-76A7-4C91-AC47-CB4DADB0C9B3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{911E116F-A8D1-4A46-AF90-421523C94C24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{911E116F-A8D1-4A46-AF90-421523C94C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{911E116F-A8D1-4A46-AF90-421523C94C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{911E116F-A8D1-4A46-AF90-421523C94C24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
