@@ -26,12 +26,12 @@ exit /b %errorlevel%
 -register:[Path32] ^
 -target:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\mstest.exe" -filter:"[NugetTestMS.dll]" ^
 -targetargs:"/testcontainer:\"%~dp0NugetTestMS\bin\Release\NugetTestMS.dll\" /resultsfile:\"%~dp0NugetTestMS.trx\"" ^
--output:"c:\Report\NugetTestReport.xml" 
+-output:"%~dp0NugetTestReport.xml" 
 exit /b %errorlevel%
  
 :RunReportGeneratorOutput
 "%~dp0packages\ReportGenerator.2.4.5.0\tools\ReportGenerator.exe" ^
--reports:"c:\report\NugetTestReport.xml" ^
+-reports:"%~dp0NugetTestReport.xml" ^
 -targetdir:"%~dp0GeneratedReports\ReportGenerator Output"
 exit /b %errorlevel%
  
