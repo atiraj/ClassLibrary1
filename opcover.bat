@@ -23,7 +23,7 @@ exit /b %errorlevel%
  
 :RunOpenCoverUnitTestMetrics
 "%~dp0packages\OpenCover.4.6.519\tools\OpenCover.Console.exe" ^
--register:user ^
+-register[:Path32] ^
 -target:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\mstest.exe" -filter:"[NugetTestMS.dll]" ^
 -targetargs:"/testcontainer:\"%~dp0NugetTestMS\bin\Release\NugetTestMS.dll\" /resultsfile:\"%~dp0NugetTestMS.trx\"" ^
 -output:"c:\Report\NugetTestReport.xml" 
