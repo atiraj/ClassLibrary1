@@ -17,7 +17,7 @@ if %errorlevel% equ 0 (
  
 REM Launch the report
 if %errorlevel% equ 0 (
- call :RunLaunchReport
+ call :OpenCoverToCoberturaConverter
 )
 exit /b %errorlevel%
  
