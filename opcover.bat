@@ -36,7 +36,7 @@ exit /b %errorlevel%
 exit /b %errorlevel%
  
 :OpenCoverToCoberturaConverter
-"%~dp0packages\OpenCoverToCoberturaConverter.0.2.4.0\tools\OpenCoverToCoberturaConverter.0.2.4.0.exe -input:"%~dp0NugetTestReport.xml" -output:"%~dp0cob.xml"
+"%~dp0packages\OpenCoverToCoberturaConverter.0.2.4.0\tools\OpenCoverToCoberturaConverter.exe -input:"%~dp0NugetTestReport.xml" -output:"%~dp0cob.xml"
 
 :RunLaunchReport
 start "report" "%~dp0\GeneratedReports\ReportGenerator Output\index.htm"
